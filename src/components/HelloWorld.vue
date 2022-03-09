@@ -1,8 +1,9 @@
 <template>
  <div id="helloWorld">
+ 
     <Navbar></Navbar>
+  
    <router-view></router-view>
-   
    
  </div>
 </template>
@@ -13,15 +14,18 @@ import Page from './Page'
 
 export default {
   name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+  data:()=>({
+    joke:'',
+   
+  }),
+  mounted(){
+   this.joke  = this.$store.getters.getcurrentJoke
   },
   components:{
     Navbar,
     Page,
-  }
+  },
+  
 }
 </script>
 

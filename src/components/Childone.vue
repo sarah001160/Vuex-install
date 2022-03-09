@@ -1,5 +1,8 @@
 <template>
     <div id="Childone">
-        this is Childone
+        This is Childone.vue
     </div>
+
+   
 </template>
+

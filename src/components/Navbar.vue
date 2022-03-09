@@ -2,9 +2,9 @@
     <div id="Navbar">
         
         <ul class="menuLink">
-             <li> <router-link to="/childone">產品管理</router-link></li>
-            <li><router-link to="/page">觀看商品</router-link></li>
-             <li>link3</li>
+             <li> <router-link to="/childone">Go to Childone</router-link></li>
+            <li><router-link to="/page">Go to Page</router-link></li>
+             <li>Empty link</li>
         </ul>
     
     </div>

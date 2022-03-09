@@ -1,5 +1,7 @@
 <template>
     <div id="Page">
-       thi si page
+      This is Page.vue
+
     </div>
 </template>
+
