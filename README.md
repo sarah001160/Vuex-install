@@ -1,5 +1,7 @@
 Vuex
 概念
+
+store資料夾> index.js
 ```
 export default new Vuex.Store({
      strict:true, //嚴謹模式
