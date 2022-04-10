@@ -1,3 +1,39 @@
+Vuex
+概念
+```
+export default new Vuex.Store({
+     strict:true, //嚴謹模式
+      state{
+          name:'',
+          price:'',
+      },
+      mutations:{
+        Mname1(state, payload){
+         state.name = payload
+        },
+        Mname2(state, status){
+         state.price = status
+        }
+      },
+      actions:{
+        method1(context, status){
+        context.commit('Mname1',status)
+        },
+        method2(context, status){
+        context.commit('Mname2', status)
+        }
+
+      },
+      getters:{
+      getCurrentName:(state)=>state.name,
+      getPrice:(state)=>state.price
+
+      }
+      
+})
+```
+
+
 # project
 
 > A Vue.js project
