@@ -19,7 +19,7 @@ export default new Vuex.Store({
       },
       actions:{
         method1(context, status){
-        context.commit('Mname1',status) //用.commit提交到Mname1的muatations
+        context.commit('Mname1',status) //用.commit提交到Mname1的mutations
         },
         method2(context, status){
         context.commit('Mname2', status)
