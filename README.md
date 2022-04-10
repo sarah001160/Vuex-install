@@ -35,7 +35,8 @@ export default new Vuex.Store({
 })
 ```
 
-components資料夾> Comp.vue元件
+components資料夾> Comp.vue元件  
+元件透過Vuex取得資料
 
  ```
 <script>
