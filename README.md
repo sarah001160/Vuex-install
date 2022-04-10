@@ -9,7 +9,7 @@ export default new Vuex.Store({
           name:'',
           price:'',
       },
-      mutations:{
+      mutations:{ //只有mutations可以更改state狀態
         Mname1(state, payload){
          state.name = payload
         },
@@ -19,7 +19,7 @@ export default new Vuex.Store({
       },
       actions:{
         method1(context, status){
-        context.commit('Mname1',status)
+        context.commit('Mname1',status) //用.commit提交到Mname1的muatations
         },
         method2(context, status){
         context.commit('Mname2', status)
