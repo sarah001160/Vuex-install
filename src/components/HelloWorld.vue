@@ -3,6 +3,8 @@
  
     <Navbar></Navbar>
   
+    
+  
    <router-view></router-view>
    
  </div>
@@ -18,8 +20,15 @@ export default {
     joke:'',
    
   }),
+  methods:{
+    getProducts(){
+      //六角學院的api還沒設定好,我只是先把vuex寫法抄下來
+      
+      //this.$store.dispatch('getProducts')
+    }
+  },
   mounted(){
-   this.joke  = this.$store.getters.getcurrentJoke
+   this.joke = this.$store.getters.getcurrentJoke;
   },
   components:{
     Navbar,
@@ -43,6 +52,7 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: red;
 }
+
 </style>
