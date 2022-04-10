@@ -35,6 +35,24 @@ export default new Vuex.Store({
 })
 ```
 
+components資料夾> Comp.vue元件
+
+ ```
+<script>
+export default{
+    name:'Comp',
+    data:()=>({
+        name:'', //透過mounted取得值
+        price:'',
+    }),
+    mounted(){
+        this.name=this.$store.getters.getCurrentName; //元件透過Vuex(store資料夾>index.js)取得state.name的方式
+    }
+}
+</script>
+
+```
+$store.getters.getCurrentName → store資料夾的index.js裡面的getters，getters裡面的getCurrentName:(state)=>state.name
 
 # project
 
