@@ -55,6 +55,10 @@ export default{
 ```
 $store.getters.getCurrentName → store資料夾的index.js裡面的getters，getters裡面的getCurrentName:(state)=>state.name
 
+
+
+<img width="406" alt="image" src="https://user-images.githubusercontent.com/43737108/162625152-7c08472f-dcea-4482-b935-e1805cbf1a13.png">
+
 # project
 
 > A Vue.js project
