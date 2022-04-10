@@ -5,7 +5,7 @@ store資料夾> index.js
 ```
 export default new Vuex.Store({
      strict:true, //嚴謹模式
-      state{
+      state{ //存資料的地方
           name:'',
           price:'',
       },
@@ -26,7 +26,7 @@ export default new Vuex.Store({
         }
 
       },
-      getters:{
+      getters:{ //同computed概念
       getCurrentName:(state)=>state.name,
       getPrice:(state)=>state.price
 
